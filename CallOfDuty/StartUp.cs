@@ -1,12 +1,15 @@
-﻿using System;
+﻿using CallOfDuty.Core;
+using CallOfDuty.Core.Interfaces;
+using System;
 
 namespace CallOfDuty
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IEngine engine = new Engine();
+            engine.Run();
         }
     }
 }
