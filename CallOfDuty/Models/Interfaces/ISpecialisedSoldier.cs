@@ -4,6 +4,6 @@ namespace CallOfDuty.Models.Interfaces
 {
     public interface ISpecialisedSoldier : IPrivate
     {
-        Corps corps { get; }
+        Corps Corps { get; }
     }
 }
