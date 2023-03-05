@@ -7,7 +7,7 @@ namespace CallOfDuty.Models.Interfaces
 
         public string FirstName { get; }
 
-        public int LastName { get; }
+        public string LastName { get; }
 
     }
 }
