@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using CallOfDuty.Enums;
 
 namespace CallOfDuty.Models.Interfaces
 {
     public interface ISpecialisedSoldier : IPrivate
     {
-
+        Corps corps { get; }
     }
 }
