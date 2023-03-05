@@ -4,8 +4,9 @@ using System.Text;
 
 namespace CallOfDuty.Models.Interfaces
 {
-    public interface IPrivate : ISoldier
+    public interface ILieutenantGeneral : IPrivate
     {
-        public decimal Salary { get; set; }
+        IReadOnlyCollection<IPrivate> Privates { get; }
+         
     }
 }
