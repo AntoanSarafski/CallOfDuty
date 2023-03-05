@@ -2,7 +2,7 @@
 
 namespace CallOfDuty
 {
-    class StartUp
+    class Program
     {
         static void Main(string[] args)
         {
