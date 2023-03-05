@@ -8,7 +8,7 @@ namespace CallOfDuty.Models
 {
     public abstract class SpecialisedSoldier : Private, ISpecialisedSoldier
     {
-        public SpecialisedSoldier(int id, 
+        protected SpecialisedSoldier(int id, 
             string firstName,
             string lastName, 
             decimal salary,

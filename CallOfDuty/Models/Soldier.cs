@@ -4,7 +4,7 @@ namespace CallOfDuty.Models
 {
     public class Soldier : ISoldier
     {
-        public Soldier(int id, string firstName, string lastName)
+        protected Soldier(int id, string firstName, string lastName)
         {
             this.Id = id;
             this.FirstName = firstName;
