@@ -12,6 +12,6 @@ namespace CallOfDuty.Models
         public decimal Salary { get ; private set; }
 
         public override string ToString()
-            => base.ToString() + $"Salary: {this.Salary:f2}";
+            => base.ToString() + $" Salary: {this.Salary:f2}";
     }
 }

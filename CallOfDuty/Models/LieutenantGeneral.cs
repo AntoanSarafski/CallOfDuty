@@ -11,7 +11,7 @@ namespace CallOfDuty.Models
             string firstName,
             string lastName, 
             decimal salary,
-            IReadOnlyCollection<Private> privates) 
+            IReadOnlyCollection<IPrivate> privates) 
             : base(id, firstName, lastName, salary)
         {
             this.Privates = privates;
