@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CallOfDuty.IO
 {
-    public class ConsoleReader : Ireader
+    public class ConsoleReader : IReader
     {
         public string ReadLine() => Console.ReadLine();
     }

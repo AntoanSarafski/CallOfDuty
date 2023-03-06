@@ -1,6 +1,6 @@
 ﻿namespace CallOfDuty.IO.Interfaces 
 {
-    public interface Ireader
+    public interface IReader
     {
         string ReadLine();
     }

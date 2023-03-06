@@ -1,5 +1,7 @@
 ﻿using CallOfDuty.Core.Interfaces;
 using CallOfDuty.Enums;
+using CallOfDuty.IO;
+using CallOfDuty.IO.Interfaces;
 using CallOfDuty.Models;
 using CallOfDuty.Models.Interfaces;
 using System;
@@ -10,23 +12,29 @@ namespace CallOfDuty.Core
 {
     public class Engine : IEngine
     {
+        private IReader reader;
+        private IWriter writer;
+
         private Dictionary<int, ISoldier> soldiers;
 
-        public Engine()
+        public Engine(IReader reader, IWriter writer)
         {
+            this.reader = reader;
+            this.writer = writer;
             soldiers = new Dictionary<int, ISoldier>();
+
         }
         public void Run()
         {
             string input;
-            while ((input = Console.ReadLine()) != "End")
+            while ((input = reader.ReadLine()) != "End")
             {
                 try
                 {
                     string[] tokens = input
                     .Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
-                    Console.WriteLine(ProcessInput(tokens));
+                    writer.WriteLine(ProcessInput(tokens));
                 }
                 catch (Exception ex) { }
                 

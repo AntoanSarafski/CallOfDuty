@@ -1,5 +1,6 @@
 ﻿using CallOfDuty.Core;
 using CallOfDuty.Core.Interfaces;
+using CallOfDuty.IO;
 using System;
 
 namespace CallOfDuty
@@ -8,7 +9,10 @@ namespace CallOfDuty
     {
         static void Main(string[] args)
         {
-            IEngine engine = new Engine();
+            IEngine engine = new Engine(
+                new ConsoleReader(),
+                new ConsoleWriter()
+                );
             engine.Run();
         }
     }
