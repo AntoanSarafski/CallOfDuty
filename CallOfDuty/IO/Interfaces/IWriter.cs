@@ -1,6 +1,7 @@
 ﻿namespace CallOfDuty.IO.Interfaces
 {
-    interface IWriter
+    public interface IWriter
     {
+        void WriteLine(string line);
     }
 }
